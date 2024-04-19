@@ -109,7 +109,6 @@
 #if defined(_MSC_VER) && !defined(_CRT_SECURE_NO_WARNINGS)
 #define _CRT_SECURE_NO_WARNINGS
 #endif
-
 #include "imgui.h"
 #ifndef IMGUI_DISABLE
 #include "imgui_impl_opengl3.h"
@@ -212,6 +211,7 @@
 #else
 #define GL_CALL(_CALL)      _CALL   // Call without error check
 #endif
+#include "../imgui.h"
 
 // OpenGL Data
 struct ImGui_ImplOpenGL3_Data
